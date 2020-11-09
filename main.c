@@ -1,18 +1,12 @@
 #include <stdio.h>
-#include<conio.h>
-#include<math.h>
-
-
-int main()
-{
-   int sec, hh, mm, ss;
-
-	 printf("Enter time in seconds: ");
-	 scanf("%d", &sec);
-	 hh = sec/3600;
-	 mm = (sec - hh*3600)/60;
-	 ss = sec - hh*3600 - mm*60;
-	 printf("%d seconds = %d hours : %d minutes : %d seconds", sec, hh, ss, mm);
-
-	 return(0);
+#include <stdlib.h>
+void main()
+{ int num;
+    printf("Input a number:");
+    scanf("%d",&num);
+    if (num>=0)
+        printf("%d is a positive number\n",num);
+    else
+        printf("%d is a negative number\n",num);
+    return 0;
 }
